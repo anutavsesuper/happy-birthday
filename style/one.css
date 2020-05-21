@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "fontlove";
+  src: url("../fonts/fontlove.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+h1{
+  color: #FA6964;
+  font-family: "fontlove";
+  font-size: 20vh;
+  position: absolute;
+  bottom: 20vh;
+  text-align: center;
+  line-height: 25vh;
+  text-transform: uppercase;
+}
+
+.one,
+.three {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.3px #FFF;
+  font-size: 20px;
+}
+
+.two {
+  color: #FFF;
+  font-size: 25px;
+}
+
+canvas {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  display: block;
+}
+
+nav {
+  height: 8vh;
+}
+
+.text {
+  height: 8vh;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.textmenu {
+  margin-right: 3vw;
+}
+
+.text {
+  height: 8vh;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.textmenu {
+  margin-right: 3vw;
+}

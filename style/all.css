@@ -1,0 +1,17 @@
+@import "reset.css";
+
+body {
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  text-decoration: none;
+}
