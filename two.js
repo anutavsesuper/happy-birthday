@@ -10,7 +10,7 @@ function windowResized() {
 }
 
 function draw() {
-  noFill();4
+  noFill();
 
   if (mouseIsPressed === true) {
   stroke(250, sin(love)*250, 100);

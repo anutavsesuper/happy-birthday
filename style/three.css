@@ -1,0 +1,52 @@
+.one {
+/* .three { */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.3px #FFF;
+  font-size: 20px;
+}
+
+.one:hover {
+/* .three:hover { */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.3px #FACD64;
+}
+
+.three {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.two {
+  color: #FFF;
+  font-size: 25px;
+}
+
+.two:hover {
+  color: #FA6964;
+}
+
+canvas {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  display: block;
+}
+
+nav {
+  height: 8vh;
+}
+
+.text {
+  height: 8vh;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.textmenu {
+  margin-right: 3vw;
+}
