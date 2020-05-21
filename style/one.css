@@ -5,7 +5,7 @@
   font-weight: normal;
 }
 
-h1{
+h1 {
   color: #FA6964;
   font-family: "fontlove";
   font-size: 20vh;
@@ -16,6 +16,10 @@ h1{
   text-transform: uppercase;
 }
 
+h1:hover {
+  color: #FACD64;
+}
+
 .one,
 .three {
   -webkit-background-clip: text;
@@ -24,9 +28,20 @@ h1{
   font-size: 20px;
 }
 
+.one:hover,
+.three:hover {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.3px #FACD64;
+}
+
 .two {
   color: #FFF;
   font-size: 25px;
+}
+
+.two:hover {
+  color: #FA6964;
 }
 
 canvas {

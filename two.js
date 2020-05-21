@@ -10,9 +10,12 @@ function windowResized() {
 }
 
 function draw() {
-  noFill();
+  noFill();4
+
+  if (mouseIsPressed === true) {
   stroke(250, sin(love)*250, 100);
   strokeWeight(5);
   ellipse(mouseX, windowHeight-mouseY, 60, 60);
   love += 0.08;
+}
 }
