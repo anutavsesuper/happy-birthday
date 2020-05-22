@@ -44,10 +44,10 @@ function draw() {
 
 
   if (mouseIsPressed == true) {
-    fill(250, 205, 100); // White
+    fill(250, 205, 100);
   }
   else {
-    fill(250, 105, 100);   // Black
+    fill(250, 105, 100);
   }
 }
 

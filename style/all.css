@@ -14,4 +14,13 @@ a {
   font-style: normal;
   font-variant: normal;
   text-decoration: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+h1 {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
 }
