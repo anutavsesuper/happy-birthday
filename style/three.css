@@ -1,21 +1,12 @@
-.one {
-/* .three { */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0.3px #FFF;
+.one,
+.three {
+  color: #FFF;
   font-size: 20px;
 }
 
-.one:hover {
-/* .three:hover { */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0.3px #FACD64;
-}
-
-.three {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.one:hover,
+.three:hover {
+  color: #FACD64;
 }
 
 .two {

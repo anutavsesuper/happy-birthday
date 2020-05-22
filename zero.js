@@ -30,7 +30,19 @@ function draw() {
   pop();
 
   push();
-  translate(width * 0.1, height * 0.4);
+  translate(width * 0.8, height * 0.5);
+  rotate(frameCount / 100.0);
+  star(0, 0, 7, 11, 5);
+  pop();
+
+  push();
+  translate(width * 0.5, height * 0.92);
+  rotate(frameCount / -100.0);
+  star(0, 0, 10, 15, 5);
+  pop();
+
+  push();
+  translate(width * 0.1, height * 0.5);
   rotate(frameCount / -100.0);
   star(0, 0, 10, 15, 5);
   pop();
@@ -41,13 +53,25 @@ function draw() {
   star(0, 0, 15, 23, 5);
   pop();
 
+  push();
+  translate(width * 0.2, height * 0.2);
+  rotate(frameCount / 100.0);
+  star(0, 0, 15, 23, 5);
+  pop();
+
+  push();
+  translate(width * 0.7, height * 0.2);
+  rotate(frameCount / 100.0);
+  star(0, 0, 10, 15, 5);
+  pop();
+
 
 
   if (mouseIsPressed == true) {
-    fill(250, 205, 100);
+    fill(250, 205, 100); // White
   }
   else {
-    fill(250, 105, 100);
+    fill(250, 105, 100);   // Black
   }
 }
 

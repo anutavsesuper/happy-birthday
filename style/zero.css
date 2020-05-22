@@ -4,16 +4,12 @@
 }
 
 .three {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0.3px #FFF;
+  color: #FFF;
   font-size: 20px;
 }
 
 .three:hover {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0.3px #FACD64;
+  color: #FACD64;
 }
 
 .two {
