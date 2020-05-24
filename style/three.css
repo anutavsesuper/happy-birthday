@@ -1,3 +1,30 @@
+@font-face {
+  font-family: "fontlove";
+  src: url("../fonts/fontlove.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  background-color: #69A4FF;
+}
+
+h1 {
+  color: #69A4FF;
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 20vh;
+  position: absolute;
+  bottom: 25vh;
+  text-align: center;
+  line-height: 25vh;
+}
+
+/* h1:hover {
+  color: #FFF;
+} */
+
 .one,
 .three {
   color: #FFF;
@@ -6,7 +33,7 @@
 
 .one:hover,
 .three:hover {
-  color: #FACD64;
+  color: #FA6964;
 }
 
 .two {
@@ -18,6 +45,7 @@
   color: #FA6964;
 }
 
+
 canvas {
   position: fixed;
   z-index: -1;
@@ -27,6 +55,19 @@ canvas {
 
 nav {
   height: 8vh;
+}
+
+.text {
+  height: 8vh;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.textmenu {
+  margin-right: 3vw;
 }
 
 .text {

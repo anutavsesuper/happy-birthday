@@ -5,6 +5,10 @@
   font-weight: normal;
 }
 
+body {
+  background-color: #000;
+}
+
 h1 {
   color: #FA6964;
   font-family: "fontlove";
