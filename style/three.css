@@ -25,6 +25,24 @@ h1 {
   color: #FFF;
 } */
 
+h2 {
+  color: #000;
+  font-family: "Arial Regular", Gadget, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 3vh;
+  position: absolute;
+  bottom: 10vh;
+  text-align: center;
+  line-height: 2.5vh;
+  transition: 0s 9999999s;
+}
+
+h2:hover {
+  opacity: 0;
+  transition: 1s;
+}
+
 .one,
 .three {
   color: #FFF;
