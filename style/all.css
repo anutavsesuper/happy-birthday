@@ -23,3 +23,9 @@ h1 {
   -khtml-user-select: none;
   user-select: none;
 }
+
+h2 {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
