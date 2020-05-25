@@ -24,10 +24,12 @@ function windowResized() {
 function draw() {
   if (keyIsPressed == true) {
   push()
+  stroke(0);
+  strokeWeight(0.5);
   fill(random(colors));
   this.x = random(width);
   this.y = random(height);
-  let size = random(20,200);
+  let size = random(20,150);
   star(this.x, this.y, size, size*0.62, 5);
 }}
 
@@ -36,7 +38,7 @@ function star(x, y, radius1, radius2, npoints) {
   let angle = TWO_PI / npoints;
   let halfAngle = angle / 2.0;
   beginShape();
-  for (let a = -0.95; a < TWO_PI; a += angle) {
+  for (let a = (random(0,1)); a < TWO_PI; a += angle) {
     let sx = x + cos(a) * radius2;
     let sy = y + sin(a) * radius2;
     vertex(sx, sy);
