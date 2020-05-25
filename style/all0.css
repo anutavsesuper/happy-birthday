@@ -29,9 +29,3 @@ h2 {
   -khtml-user-select: none;
   user-select: none;
 }
-
-
-.zero {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}

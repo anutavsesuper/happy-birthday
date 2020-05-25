@@ -1,0 +1,85 @@
+body {
+  background-color: #000;
+}
+
+.one {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.three {
+  color: #FFF;
+  font-size: 20px;
+}
+
+.three:hover {
+  color: #FACD64;
+}
+
+.two {
+  color: #FFF;
+  font-size: 25px;
+}
+
+.two:hover {
+  color: #FA6964;
+}
+
+h1 {
+  color: #000;
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 5vh;
+  position: absolute;
+  bottom: 30vh;
+  line-height: 6vh;
+  transition: 0s 9999999s;
+}
+
+h1:hover {
+  opacity: 0;
+  transition: 8s;
+}
+
+h2 {
+  color: #FFF;
+  font-family: "Arial Regular", Gadget, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 3vh;
+  position: absolute;
+  bottom: 10vh;
+  text-align: center;
+  line-height: 2.5vh;
+  transition: 0s 9999999s;
+}
+
+h2:hover {
+  opacity: 0;
+  transition: 1s;
+}
+
+canvas {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  display: block;
+}
+
+nav {
+  height: 8vh;
+}
+
+.text {
+  height: 8vh;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.textmenu {
+  margin-right: 3vw;
+}

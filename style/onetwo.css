@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "fontlove";
+  src: url("../fonts/fontlove.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  background-color: #000;
+}
+
+h1 {
+  color: #FA6964;
+  font-family: "fontlove";
+  font-size: 20vh;
+  position: absolute;
+  bottom: 20vh;
+  text-align: center;
+  line-height: 25vh;
+  text-transform: uppercase;
+}
+
+h1:hover {
+  color: #FACD64;
+}
+
+h2 {
+  color: #FFF;
+  font-family: "Arial Regular", Gadget, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 3vh;
+  position: absolute;
+  bottom: 10vh;
+  text-align: center;
+  line-height: 2.5vh;
+  transition: 0s 9999999s;
+}
+
+h2:hover {
+  opacity: 0;
+  transition: 1s;
+}
+
+.one,
+.three {
+  color: #FFF;
+  font-size: 20px;
+}
+
+.one:hover,
+.three:hover {
+  color: #FACD64;
+}
+
+.two {
+  color: #FFF;
+  font-size: 25px;
+}
+
+.two:hover {
+  color: #FA6964;
+}
+
+
+canvas {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  display: block;
+}
+
+nav {
+  height: 8vh;
+}
+
+.text {
+  height: 8vh;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.textmenu {
+  margin-right: 3vw;
+}
+
+.text {
+  height: 8vh;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.textmenu {
+  margin-right: 3vw;
+}
