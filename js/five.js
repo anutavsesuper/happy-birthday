@@ -1,48 +1,66 @@
+function preload() {
+  one = loadImage('.../img/one.jpg');
+  two = loadImage('../img/two.jpg');
+  three = loadImage('../img/three.jpg');
+  four = loadImage('../img/four.jpg');
+  five = loadImage('../img/five.jpg');
+  six = loadImage('../img/six.jpg');
+  seven = loadImage('../img/seven.jpg');
+  eight = loadImage('../img/eight.jpg');
+}
+
 function windowResized() {
 resizeCanvas(windowWidth, windowHeight);
 }
 function setup() {
 createCanvas(windowWidth, windowHeight);
 
-x = width*0.2;
+x = width*0.8;
 y = height*0.4;
-w = 300;
-h = 70;
+w = 197;
+h = 164;
 
-x1 = width*0.7;
+x1 = width*0.3;
 y1 = height*0.6;
-w1 = 200;
-h1 = 200;
+w1 = 220;
+h1 = 220;
 
 x3 = width*0.1;
 y3 = height*0.1;
-w3 = 100;
-h3 = 100;
+w3 = 183;
+h3 = 164;
 
-x4 = width*0.5;
-y4 = height*0.6;
-w4 = 8;
-h4 = 100;
+x4 = width*0.4;
+y4 = height*0.47;
+w4 = 220;
+h4 = 44;
 
 x5 = width*0.7;
 y5 = height*0.2;
-w5 = 55;
-h5 = 8;
+w5 = 380;
+h5 = 100;
+
+x6 = width*0.1;
+y6 = height*0.2;
+w6 = 348;
+h6 = 252;
+
+x7 = width*0.5;
+y7 = height*0.2;
+w7 = 252;
+h7 = 252;
+
+x8 = width*0.3;
+y8 = height*0.2;
+w8 = 600;
+h8 = 84;
 }
 
 
 function draw() {
 noStroke()
-background(250, 205, 100);
-
-// // солнце
-// if ((mouseX > 500) && (mouseX < 570) && (mouseY > 20) && (mouseY < 100)){
-// fill(255, 222, 173)
-// }
-// else {
-// fill(244, 164, 96);
-// }
-// ellipse(540, 60, 70, 70)
+// background(250, 205, 100);
+background(0);
 
 
 if (mouseX > x1 && mouseX < x1 + w1 && mouseY > y1 && mouseY < y1 + h1) {
@@ -56,16 +74,7 @@ x1 = mouseX + offsetX1;
 y1 = mouseY + offsetY1;
 }
 
-if (dragging1) {
-fill (255, 255, 255)
-}
-else if (rollover1) {
-fill(101, 161, 255);
-}
-else {
-fill(85, 107, 470);
-}
-rect(x1, y1, w1, h1);
+image(one, x1, y1, w1, h1);
 
 
 if (mouseX > x && mouseX < x + w && mouseY > y && mouseY < y + h) {
@@ -79,18 +88,7 @@ x = mouseX + offsetX;
 y = mouseY + offsetY;
 }
 
-
-
-if (dragging) {
-fill (255, 255, 255)
-}
-else if (rollover) {
-fill(255, 152, 149);
-}
-else {
-fill(250, 105, 100);
-}
-rect(x, y, w, h);
+image(two, x, y, w, h);
 
 
 
@@ -106,18 +104,7 @@ x3 = mouseX + offsetX3;
 y3 = mouseY + offsetY3;
 }
 
-if (dragging3) {
-fill (150, 150, 150, 150)
-}
-else if (rollover3) {
-fill(200, 200, 200, 150);
-}
-else {
-fill(255, 255, 255, 150);
-}
-stroke(0)
-strokeWeight(8)
-rect(x3, y3, w3, h3);
+image(three, x3, y3, w3, h3);
 
 
 
@@ -132,17 +119,7 @@ x4 = mouseX + offsetX4;
 y4 = mouseY + offsetY4;
 }
 
-if (dragging4) {
-fill (150, 150, 150)
-}
-else if (rollover4) {
-fill(100, 100, 100);
-}
-else {
-fill(0, 0, 0);
-}
-noStroke()
-rect(x4, y4, w4, h4);
+image(four, x4, y4, w4, h4);
 
 
 if (mouseX > x5 && mouseX < x5 + w5 && mouseY > y5 && mouseY < y5 + h5) {
@@ -156,18 +133,56 @@ x5 = mouseX + offsetX5;
 y5 = mouseY + offsetY5;
 }
 
-if (dragging5) {
-fill (150, 150, 150)
-}
-else if (rollover5) {
-fill(100, 100, 100);
+image(five, x5, y5, w5, h5);
+
+
+
+
+if (mouseX > x6 && mouseX < x6 + w6 && mouseY > y6 && mouseY < y6 + h6) {
+rollover6 = true;
 }
 else {
-fill(0, 0, 0);
+rollover6 = false;
 }
-rect(x5, y5, w5, h5);
+if (dragging6) {
+x6 = mouseX + offsetX6;
+y6 = mouseY + offsetY6;
+}
 
+image(six, x6, y6, w6, h6);
+
+
+if (mouseX > x7 && mouseX < x7 + w7 && mouseY > y7 && mouseY < y7 + h7) {
+rollover7 = true;
 }
+else {
+rollover7 = false;
+}
+if (dragging7) {
+x7 = mouseX + offsetX7;
+y7 = mouseY + offsetY7;
+}
+
+image(seven, x7, y7, w7, h7);
+
+
+
+if (mouseX > x8 && mouseX < x8 + w8 && mouseY > y8 && mouseY < y8 + h8) {
+rollover8 = true;
+}
+else {
+rollover8 = false;
+}
+if (dragging8) {
+x8 = mouseX + offsetX8;
+y8 = mouseY + offsetY8;
+}
+
+image(eight, x8, y8, w8, h8);
+}
+
+
+
 
 
 
@@ -186,8 +201,18 @@ var rollover4 = false;
 var dragging5 = false;
 var rollover5 = false;
 
+var dragging6 = false;
+var rollover6 = false;
+
+var dragging7 = false;
+var rollover7 = false;
+
+var dragging8 = false;
+var rollover8 = false;
+
+
 //var x, y, w, h;
-var offsetX, offsetY, offsetX1, offsetY1, offsetX3, offsetY3, offsetX4, offsetY4, offsetX5, offsetY5;
+var offsetX, offsetY, offsetX1, offsetY1, offsetX3, offsetY3, offsetX4, offsetY4, offsetX5, offsetY5, offsetX6, offsetY6, offsetX7, offsetY7, offsetX8, offsetY8;
 
 
 
@@ -225,6 +250,25 @@ dragging5 = true;
 offsetX5 = x5-mouseX;
 offsetY5 = y5-mouseY;
 }
+
+
+if (mouseX > x6 && mouseX < x6 + w6 && mouseY > y6 && mouseY < y6 + h6) {
+dragging6 = true;
+offsetX6 = x6-mouseX;
+offsetY6 = y6-mouseY;
+}
+
+if (mouseX > x7 && mouseX < x7 + w7 && mouseY > y7 && mouseY < y7 + h7) {
+dragging7 = true;
+offsetX7 = x7-mouseX;
+offsetY7 = y7-mouseY;
+}
+
+if (mouseX > x8 && mouseX < x8 + w8 && mouseY > y8 && mouseY < y8 + h8) {
+dragging8 = true;
+offsetX8 = x8-mouseX;
+offsetY8 = y8-mouseY;
+}
 }
 
 function mouseReleased() {
@@ -233,4 +277,7 @@ dragging = false;
 dragging3 = false;
 dragging4 = false;
 dragging5 = false;
+dragging6 = false;
+dragging7 = false;
+dragging8 = false;
 }
